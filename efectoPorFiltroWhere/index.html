@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Efecto sobre features al aplicar un filtro</title>
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    #busqueda {
+      z-index: 2;
+      position: absolute;
+      top:10px;
+      right: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.26/"></script>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/512/gas-station.png">
+
+  
+
+  <script src="index.js"></script>
+
+</head>
+<body>
+  <div id="viewDiv"></div>
+  <div id="busqueda">
+    <input type="text" id="inputProv" value="Toledo" placeholder="Provincia"/>
+    <button id="btn">Buscar</button>
+  </div>
+</body>
+</html>
